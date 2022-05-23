@@ -16,17 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView nouvellePartie = (TextView) findViewById(R.id.main_activity_nouvelle_partie);
-        nouvellePartie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(MainActivity.this, ChoixProgramme.class);
-                // Exécution de l’activité : ouverture de la fenêtre
-                startActivity(intent);
-            }
-        });
-
         final TextView quitter = (TextView) findViewById(R.id.textView4);
         quitter.setOnClickListener(new View.OnClickListener() {
             @Override

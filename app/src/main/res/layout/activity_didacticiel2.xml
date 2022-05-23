@@ -7,18 +7,6 @@
     android:background="#4C572D"
     tools:context=".controller.Didacticiel_2">
 
-    <TextView
-        android:id="@+id/didacticiel_2_croix2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="X"
-        android:textColor="#F0E93A"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/setting2"
         android:layout_width="40dp"
@@ -28,6 +16,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rouage_blanc" />
+
+    <TextView
+        android:id="@+id/didacticiel_2_croix2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="X"
+        android:textColor="#F0E93A"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/titre3"
@@ -62,7 +62,7 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/popup_title"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
@@ -148,7 +148,7 @@
             android:layout_margin="8dp"
             android:background="@drawable/border"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp" >
 
             <TextView
                 android:id="@+id/textView8"
@@ -497,12 +497,24 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_marginTop="4dp"
-                android:text="IA : defensive"
+                android:text="IA : offensive"
                 android:textColor="#000000"
                 android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:text="◀"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
@@ -518,17 +530,4 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="4dp"
-        android:layout_weight="1"
-        android:padding="0dp"
-        android:text="◀"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
