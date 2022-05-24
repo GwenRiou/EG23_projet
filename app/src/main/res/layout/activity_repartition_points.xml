@@ -53,7 +53,6 @@
         app:layout_constraintTop_toBottomOf="@+id/titre6">
 
         <LinearLayout
-            android:id="@+id/repartition_points_chef_de_guerre_layout"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
@@ -62,7 +61,7 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/popup_title"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
@@ -82,7 +81,7 @@
                 app:srcCompat="@drawable/logo_chefdeguerre" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Chef_force"
+                android:id="@+id/didacticiel_2_textView_Chef_force"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -92,7 +91,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Chef_dexterite"
+                android:id="@+id/didacticiel_2_textView_Chef_dexterite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -102,7 +101,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Chef_resistance"
+                android:id="@+id/didacticiel_2_textView_Chef_resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -112,7 +111,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Chef_constitution"
+                android:id="@+id/didacticiel_2_textView_Chef_constitution"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -122,7 +121,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Chef_initiative"
+                android:id="@+id/didacticiel_2_textView_Chef_initiative"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -172,7 +171,7 @@
                 app:srcCompat="@drawable/logo_elite" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Elite_force"
+                android:id="@+id/didacticiel_2_textView_Elite_force"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -182,7 +181,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Elite_dexterite"
+                android:id="@+id/didacticiel_2_textView_Elite_dexterite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -192,7 +191,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Elite_resistance"
+                android:id="@+id/didacticiel_2_textView_Elite_resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -202,7 +201,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Elite_constitution"
+                android:id="@+id/didacticiel_2_textView_Elite_constitution"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -212,7 +211,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Elite_initiative"
+                android:id="@+id/didacticiel_2_textView_Elite_initiative"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -262,7 +261,7 @@
                 app:srcCompat="@drawable/logo_alpha" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Alpha_force"
+                android:id="@+id/didacticiel_2_textView_Alpha_force"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -272,7 +271,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Alpha_dexterite"
+                android:id="@+id/didacticiel_2_textView_Alpha_dexterite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -282,7 +281,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Alpha_resistance"
+                android:id="@+id/didacticiel_2_textView_Alpha_resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -292,7 +291,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Alpha_constitution"
+                android:id="@+id/didacticiel_2_textView_Alpha_constitution"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -302,7 +301,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Alpha_initiative"
+                android:id="@+id/didacticiel_2_textView_Alpha_initiative"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -352,7 +351,7 @@
                 app:srcCompat="@drawable/logo_bravo" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Bravo_force"
+                android:id="@+id/didacticiel_2_textView_Bravo_force"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -362,7 +361,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Bravo_dexterite"
+                android:id="@+id/didacticiel_2_textView_Bravo_dexterite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -372,7 +371,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Bravo_resistance"
+                android:id="@+id/didacticiel_2_textView_Bravo_resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -382,7 +381,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Bravo_constitution"
+                android:id="@+id/didacticiel_2_textView_Bravo_constitution"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -392,7 +391,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Bravo_initiative"
+                android:id="@+id/didacticiel_2_textView_Bravo_initiative"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -442,7 +441,7 @@
                 app:srcCompat="@drawable/logo_charlie" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Charlie_force"
+                android:id="@+id/didacticiel_2_textView_Charlie_force"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -452,7 +451,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Charlie_dexterite"
+                android:id="@+id/didacticiel_2_textView_Charlie_dexterite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -462,7 +461,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Charlie_resistance"
+                android:id="@+id/didacticiel_2_textView_Charlie_resistance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -472,7 +471,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Charlie_constitution"
+                android:id="@+id/didacticiel_2_textView_Charlie_constitution"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -482,7 +481,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/repartition_points_textView_Charlie_initiative"
+                android:id="@+id/didacticiel_2_textView_Charlie_initiative"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"

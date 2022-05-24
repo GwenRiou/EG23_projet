@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.duolight.projeteg23.R;
 
-
 public class ChoixProgramme extends AppCompatActivity implements View.OnClickListener {
 
     private static final String SHARED_PREF_JOUEUR_1_INFO = "SHARED_PREF_JOUEUR_1_INFO"; // nom du fichier
@@ -25,7 +24,6 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
     private Button mChoixButton5;
     private Button mChoixButton6;
     private Button mChoixButton7;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +40,7 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
         mChoixButton7 = findViewById(R.id.choix_programme_button_7);
 
 
+
         // Use the same listener for the four buttons.
         // The view id value will be used to distinguish the button triggered
         mChoixButton1.setOnClickListener(this);
@@ -54,7 +53,6 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
 
     }
 
-    @Override
     public void onClick(View v) {
         if (v == mChoixButton1) {
             sharedPref(SHARED_PREF_JOUEUR_1_INFO,SHARED_PREF_JOUEUR_1_INFO_KEY,"ISI");
@@ -74,26 +72,17 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
         else {
             throw new IllegalStateException("Unknown clicked view : " + v);
         }
-        //check si joueur 2 à a choisit sa branche ;
         pageSuivante();
     }
-
     public void sharedPref (String nomFichier, String key,String branche){
         getSharedPreferences(nomFichier, MODE_PRIVATE)
                 .edit()
                 .putString(key, branche)
                 .apply();
     }
-    /*public void pageSuivante() {
+    public void pageSuivante(){
         // Création d’une activité associée à l’exécution de MaGestionListe.class
         Intent intent = new Intent(ChoixProgramme.this, RepartitionPoints.class);
-        // Exécution de l’activité : ouverture de la fenêtre
-        startActivity(intent);
-    }*/
-    //enlever plus tard
-    public void pageSuivante() {
-        // Création d’une activité associée à l’exécution de MaGestionListe.class
-        Intent intent = new Intent(ChoixProgramme.this, DeploiementArmee.class);
         // Exécution de l’activité : ouverture de la fenêtre
         startActivity(intent);
     }
