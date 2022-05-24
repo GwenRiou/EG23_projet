@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4C572D"
-    tools:context=".controller.Didacticiel_2">
+    tools:context=".controller.RepartitionPoints">
 
     <TextView
-        android:id="@+id/didacticiel_2_croix2"
+        android:id="@+id/repartition_points_joueur_branche"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="X"
-        android:textColor="#F0E93A"
-        android:textSize="34sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#00D41A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/setting2"
+        android:id="@+id/setting4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
@@ -30,11 +29,11 @@
         app:srcCompat="@drawable/rouage_blanc" />
 
     <TextView
-        android:id="@+id/titre3"
+        android:id="@+id/titre6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:text="Les différents soldats"
+        android:text="Points restants : 400"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -46,12 +45,12 @@
     <LinearLayout
         android:layout_width="729dp"
         android:layout_height="285dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre3">
+        app:layout_constraintTop_toBottomOf="@+id/titre6">
 
         <LinearLayout
             android:layout_width="127.8dp"
@@ -503,32 +502,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_weight="1"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:padding="0dp"
-        android:text="▶"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="4dp"
-        android:layout_weight="1"
-        android:padding="0dp"
-        android:text="◀"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
