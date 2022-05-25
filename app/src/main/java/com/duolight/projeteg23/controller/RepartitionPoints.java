@@ -41,8 +41,8 @@ public class RepartitionPoints extends AppCompatActivity {
                 myCustomAlertDialog();
             }
         });
-
     }
+
     private void myCustomAlertDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final View popUpView = getLayoutInflater().inflate(R.layout.popup, null);
