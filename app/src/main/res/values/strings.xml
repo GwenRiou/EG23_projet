@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProjetEG23</string>
+    <string name="didacticiel_text">- PointsDeVie :  Points restant d’un soldat. Lorsque la valeur atteint 0,
+        le combattant est vaincu. \n
+        - Force :  Augmente les dégâts du combattant de 10% par point affecté.
+        Exemple : si un combattant à 2 points, il fera 20% de dégâts en plus.\n
+        - Dextérité :  Augmente les chances de toucher son ennemi lors d’une attaque, ou d’esquiver lorsqu’on est attaqué.
+        1 point correspond à 3% de chance supplémentaire d’atteindre sa cible ou d’esquiver une attaque.\n
+        - Résistance : Diminuent les dégâts reçus par le combattant de 5% par point affecté.
+        Exemple : si un combattant a 2 points, 10% des dégâts reçu seront absorbés.\n
+        - Constitution : Augmente la constitution du combattant lui donnant des points de vie supplémentaires.
+        Exemple : 10 points de constitution augmenteront les points de vie initiaux à 40 (au lieu de 30).\n
+        - Initiative : Lors d’un affrontement, le combattant avec le plus d’initiative porte le premier coup, puis c’est le deuxième combattant avec le plus d’initiative etc...\n
+        - IntelligenceArtificielle : Façon de jouer des combattants. Les choix : Défensif, Offensif, Aléatoire. \n
+        - Type de soldats : Il existe 5 types de soldats ayant des statistiques initiales différents (voir page 2).</string>
+    <string name="force">Force</string>
+</resources>

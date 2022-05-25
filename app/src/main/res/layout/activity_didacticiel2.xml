@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C572D"
+    tools:context=".controller.Didacticiel_2">
+
+    <TextView
+        android:id="@+id/didacticiel_2_croix2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="X"
+        android:textColor="#F0E93A"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rouage_blanc" />
+
+    <TextView
+        android:id="@+id/titre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Les différents soldats"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="729dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre3">
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/popup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Chef de Guerre "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="107dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_chefdeguerre" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Chef_force"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Chef_dexterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Chef_resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Chef_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="constitution : 10"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Chef_initiative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Soldats d'elite"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_elite" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Elite_force"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Elite_dexterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Elite_resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Elite_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="constitution : 10"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Elite_initiative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Alpha"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_alpha" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Alpha_force"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Alpha_dexterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Alpha_resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Alpha_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="constitution : 10"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Alpha_initiative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Bravo"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_bravo" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Bravo_force"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Bravo_dexterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Bravo_resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Bravo_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="constitution : 10"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Bravo_initiative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Charlie"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_charlie" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Charlie_force"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/force"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Charlie_dexterite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Dextérité : 2 "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Charlie_resistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Résistance  : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Charlie_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="constitution : 10"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/didacticiel_2_textView_Charlie_initiative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Initiative : 2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="IA : offensive"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="▶"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:text="◀"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

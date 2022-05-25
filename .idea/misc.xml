@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/activity_repartition_points.xml" value="0.17249240121580547" />
+        <entry key="..\:/UTT/ISI/ISI01/eg23/EG23_projet-master/app/src/main/res/layout/popup.xml" value="0.17249240121580547" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable-v24/logo/app/src/main/res/layout/activity_main.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/border.xml" value="0.1785" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/btn_choix_programme.xml" value="0.1945" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/button_arrow.xml" value="0.1" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_choix_programme.xml" value="0.264" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel.xml" value="0.25" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel2.xml" value="0.2" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_repartition_points.xml" value="0.264" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/popup.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
