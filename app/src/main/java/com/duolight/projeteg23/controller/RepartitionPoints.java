@@ -159,7 +159,7 @@ public class RepartitionPoints extends AppCompatActivity {
         builder.create();
         builder.show();
     }
-
+// petit message pour que git pense que j'ai change le document :)
     private Armee generateArmee(int joueur){
         Soldats chefDeGuerre = new Soldats(
                 "chef de Guerre ",
