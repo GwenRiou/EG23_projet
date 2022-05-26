@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/rouage_blanc" />
 
     <TextView
-        android:id="@+id/titre6"
+        android:id="@+id/repartition_points_restants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
@@ -50,10 +50,10 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre6">
+        app:layout_constraintTop_toBottomOf="@+id/repartition_points_restants">
 
         <LinearLayout
-            android:id="@+id/popUp_layout"
+            android:id="@+id/repartition_points_chefDeGuerre"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
@@ -143,6 +143,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/repartition_points_soldatElite"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
@@ -233,6 +234,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/repartition_points_Alpha"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
@@ -323,6 +325,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/repartition_points_Bravo"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
@@ -413,6 +416,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/repartition_points_Charlie"
             android:layout_width="127.8dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"

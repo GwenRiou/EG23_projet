@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/popUp_layout"
+        android:id="@+id/repartition_points_chefDeGuerre"
         android:layout_width="246dp"
         android:layout_height="362dp"
         android:layout_margin="8dp"
@@ -50,12 +50,12 @@
                 android:text="@string/force"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_force_plus"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/popUp_button_force_moins"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -63,12 +63,12 @@
                 android:padding="0dp"
                 android:text="◀"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button7"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_force_plus"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/popUp_button_force_plus"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -89,12 +89,12 @@
                 android:text="Dextérité : 2 "
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button9"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_dexterite_moins"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_moins" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/popUp_button_dexterite_moins"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -102,12 +102,12 @@
                 android:padding="0dp"
                 android:text="◀"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button10"
-                app:layout_constraintTop_toBottomOf="@+id/button8"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_dexterite_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_moins"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/popUp_button_dexterite_plus"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -116,7 +116,7 @@
                 android:text="▶"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button7"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_force_plus"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
@@ -130,12 +130,25 @@
                 android:text="Résistance  : 2"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button12"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_resistance_moins"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/button12" />
+                app:layout_constraintTop_toTopOf="@+id/popUp_button_resistance_moins" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/popUp_button_resistance_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_resistance_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_dexterite_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_resistance_plus"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -144,59 +157,7 @@
                 android:text="▶"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button10"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="#80A035"
-                android:padding="0dp"
-                android:text="◀"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button11"
-                app:layout_constraintTop_toBottomOf="@+id/button9"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="#80A035"
-                android:padding="0dp"
-                android:text="◀"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button13"
-                app:layout_constraintTop_toBottomOf="@+id/button12"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="#80A035"
-                android:padding="0dp"
-                android:text="◀"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button16"
-                app:layout_constraintTop_toBottomOf="@+id/button14"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="#80A035"
-                android:padding="0dp"
-                android:text="◀"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/button17"
-                app:layout_constraintTop_toBottomOf="@+id/button15"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_dexterite_plus"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
@@ -208,12 +169,25 @@
                 android:text="Constitution : 10"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button14"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_consititution_moins"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button12" />
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_moins" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/popUp_button_consititution_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_constitution_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_constitution_plus"
                 android:layout_width="48dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
@@ -222,7 +196,7 @@
                 android:text="▶"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button11"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_resistance_plus"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
@@ -234,9 +208,35 @@
                 android:text="Initiative : 2"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button15"
+                app:layout_constraintBottom_toBottomOf="@+id/popUp_button_initiative_moins"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button14" />
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins" />
+
+            <Button
+                android:id="@+id/popUp_button_initiative_moins"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/popUp_button_initiative_plus"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_consititution_moins"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/popUp_button_initiative_plus"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="▶"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_constitution_plus"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/popUp_IA"
@@ -249,20 +249,7 @@
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/button18"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button15" />
-
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:background="#80A035"
-                android:padding="0dp"
-                android:text="▶"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button13"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_moins" />
 
             <Button
                 android:id="@+id/button17"
@@ -274,7 +261,20 @@
                 android:text="▶"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button16"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_plus"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="#80A035"
+                android:padding="0dp"
+                android:text="◀"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/button17"
+                app:layout_constraintTop_toBottomOf="@+id/popUp_button_initiative_moins"
                 tools:ignore="TouchTargetSizeCheck" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

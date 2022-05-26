@@ -28,6 +28,16 @@ public class Soldats {
     public int[] getCaracteristique(){
         return caracteristique;
     }
+    public String nom(){return nom;}
+    public int getPointsDeVie(){return caracteristique[0];}
+    public int getForce(){return caracteristique[1];}
+    public int getDexterite(){return caracteristique[2];}
+    public int getResistance(){return caracteristique[3];}
+    public int getConstitution(){return caracteristique[4];}
+    public int getInitiative(){return caracteristique[5];}
+    public int getPosition(){return caracteristique[6];}
+
+    public void setForce(int newForce){caracteristique[1]=newForce;}
 /*
     public int modificationDesCaractéristiques(int caracteristique, int modificaition){
         return caracteristique+=modificaition;
