@@ -24,11 +24,12 @@
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="268dp"
         android:text="Réserve"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -224,10 +225,10 @@
     <!-- Réserve -->
 
     <LinearLayout
-        android:layout_width="730dp"
+        android:layout_width="731dp"
         android:layout_height="116dp"
         android:orientation="horizontal"
-        android:background="#80A035"
+        android:background="@drawable/border_reserve"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="295dp">
 
