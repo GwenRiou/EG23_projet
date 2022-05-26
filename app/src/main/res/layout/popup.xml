@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/repartition_points_chef_de_guerre_layout"
+        android:id="@+id/popUp_layout"
         android:layout_width="246dp"
         android:layout_height="362dp"
         android:layout_margin="8dp"
