@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetEG23">
         <activity
+            android:name=".Reserve"
+            android:exported="false" />
+        <activity
+            android:name=".Reserve1"
+            android:exported="false" />
+        <activity
             android:name=".controller.RepartitionPoints"
             android:exported="false" />
         <activity

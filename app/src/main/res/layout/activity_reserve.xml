@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C572D"
+    tools:context=".controller.Reserve">
+
+    <TextView
+        android:id="@+id/titre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Réserve"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Réserve"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rouage_blanc" />
+
+    <TextView
+        android:id="@+id/joueur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Joueur 1"
+        android:textColor="#00D41A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="731dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre1">
+
+        <LinearLayout
+            android:id="@+id/repartition_points_chef_de_guerre_layout"
+            android:layout_width="127.8dp"
+            android:layout_height="118dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/popup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Chef de Guerre "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_chefdeguerre" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="118dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Soldats d'elite"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_elite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="118dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Alpha"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_alpha" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="118dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Bravo"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_bravo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="118dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:text="Charlie"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_charlie" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Réserve -->
+
+    <LinearLayout
+        android:layout_width="730dp"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        android:background="#80A035"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="295dp">
+
+        <LinearLayout
+            android:id="@+id/reserve1_layout"
+            android:layout_width="127.8dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_reserve"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reserve1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Chef de Guerre "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewReserve"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                app:srcCompat="@drawable/logo_chefdeguerre" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_empty_reserve"
+            android:orientation="vertical"
+            android:padding="10dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_empty_reserve"
+            android:orientation="vertical"
+            android:padding="10dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_empty_reserve"
+            android:orientation="vertical"
+            android:padding="10dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="127.8dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/border_empty_reserve"
+            android:orientation="vertical"
+            android:padding="10dp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
