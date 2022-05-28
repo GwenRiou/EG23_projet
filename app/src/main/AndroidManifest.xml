@@ -10,25 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetEG23">
         <activity
-            android:name=".Reserve"
+            android:name=".controller.DeploiementArmee"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
-            android:name=".Reserve1"
+            android:name=".controller.Reserve"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".controller.RepartitionPoints"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".controller.ChoixProgramme"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".controller.Didacticiel_2"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".controller.Didacticiel"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".controller.MainActivity"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

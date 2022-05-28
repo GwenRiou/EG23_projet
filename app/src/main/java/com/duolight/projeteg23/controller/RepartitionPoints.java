@@ -18,7 +18,7 @@ import com.duolight.projeteg23.R;
 public class RepartitionPoints extends AppCompatActivity {
 
     private static final String SHARED_PREF_JOUEUR_1_INFO = "SHARED_PREF_JOUEUR_1_INFO"; // nom du fichier
-    private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY";//Key
+    private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY"; // Key
     private TextView mBranche;
 
     @Override
@@ -37,7 +37,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mLayoutChefDeGuerre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                //Appel une pop-up
+                //Appelle une pop-up
                 myCustomAlertDialog();
             }
         });

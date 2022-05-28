@@ -56,12 +56,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Réserve -->
+
     <LinearLayout
         android:layout_width="731dp"
         android:layout_height="150dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titre1">
 
@@ -77,8 +80,9 @@
             <TextView
                 android:id="@+id/popup_title"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="32dp"
                 android:layout_gravity="center|top"
+                android:gravity="center"
                 android:text="Chef de Guerre "
                 android:textAlignment="center"
                 android:textColor="#000000"
@@ -110,10 +114,10 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center|top"
                 android:gravity="center"
-                android:text="Soldats d'elite"
+                android:text="Soldats d'élites"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -179,7 +183,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center|top"
@@ -210,7 +214,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center|top"
@@ -222,22 +226,21 @@
 
     </LinearLayout>
 
-    <!-- Réserve -->
-
     <LinearLayout
-        android:layout_width="731dp"
+        android:layout_width="match_parent"
         android:layout_height="116dp"
-        android:orientation="horizontal"
         android:background="@drawable/border_reserve"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="295dp">
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:id="@+id/reserve1_layout"
             android:layout_width="127.8dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
-            android:background="@drawable/border_reserve"
+            android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -246,57 +249,140 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
-                android:text="Chef de Guerre "
+                android:text="Libre"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageViewReserve"
+                android:id="@+id/imageViewReserve1"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                app:srcCompat="@drawable/logo_chefdeguerre" />
-
+                android:src="@drawable/rouage_blanc"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/reserve2_layout"
             android:layout_width="127.8dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reserve2_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Libre"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewReserve2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                android:src="@drawable/rouage_blanc"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/reserve3_layout"
             android:layout_width="127.8dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reserve3_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Libre"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewReserve3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                android:src="@drawable/rouage_blanc"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/reserve4_layout"
             android:layout_width="127.8dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reserve4_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Libre"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewReserve4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                android:src="@drawable/rouage_blanc"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/reserve5_layout"
             android:layout_width="127.8dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/border_empty_reserve"
             android:orientation="vertical"
             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/reserve5_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="Libre"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewReserve5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|top"
+                android:layout_margin="4dp"
+                android:contentDescription="le logo du chef de Guerre"
+                android:src="@drawable/rouage_blanc"/>
         </LinearLayout>
 
     </LinearLayout>
