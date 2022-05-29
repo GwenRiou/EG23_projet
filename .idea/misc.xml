@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable-v24/logo/app/src/main/res/layout/activity_main.xml" value="0.17527173913043478" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/border.xml" value="0.1785" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/border_empty_reserve.xml" value="0.1" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/border_reserve.xml" value="0.2265" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/btn_choix_programme.xml" value="0.1945" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/button_arrow.xml" value="0.1" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/drawable/zone_combat.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_choix_programme.xml" value="0.264" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_deploiement_armee.xml" value="0.1" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel.xml" value="0.25" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_didacticiel2.xml" value="0.2" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_repartition_points.xml" value="0.264" />
+        <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/activity_reserve.xml" value="0.2" />
         <entry key="..\:/Users/rioug/OneDrive/Bureau/ISI1/EG23/projet/Projet/app/src/main/res/layout/popup.xml" value="0.4" />
       </map>
     </option>
