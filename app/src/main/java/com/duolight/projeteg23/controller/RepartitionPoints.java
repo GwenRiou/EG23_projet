@@ -182,9 +182,9 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //------------------------------------------ICI changement de Page------------------------------------//
-                /*    Intent intent = new Intent(RepartitionPoints.this, Reserve.class);
+                Intent intent = new Intent(RepartitionPoints.this, Reserve.class);
                 // Exécution de l’activité : ouverture de la fenêtre
-                startActivity(intent);*/
+                startActivity(intent);
             }
         });
         // Liaison entre l’objet graphique R.id.button et la variable listeCourseButton
