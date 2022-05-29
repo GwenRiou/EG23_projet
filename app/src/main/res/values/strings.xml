@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ProjetEG23</string>
-    <string name="didacticiel_text"> - PointsDeVie :  Points restant d’un soldat. Lorsque la valeur atteint 0,
+    <string name="didacticiel_text">- PointsDeVie :  Points restant d’un soldat. Lorsque la valeur atteint 0,
         le combattant est vaincu. \n
         - Force :  Augmente les dégâts du combattant de 10% par point affecté.
         Exemple : si un combattant à 2 points, il fera 20% de dégâts en plus.\n

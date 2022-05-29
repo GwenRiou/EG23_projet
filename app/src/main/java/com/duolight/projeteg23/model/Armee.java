@@ -21,6 +21,23 @@ public class Armee {
         mJoueur=joueur;
     }
 
+    public Soldats getSoldat (int typeSoldat) {
+        switch (typeSoldat){
+            case 0:
+                return mChefDeGuerre.get(0);
+            case 1:
+                return mSoldatsElite.get(0);
+            case 2:
+                return mAlpha.get(0);
+            case 3:
+                return mBravo.get(0);
+            case 4:
+                return mCharlie.get(0);
+            }
+        return mChefDeGuerre.get(0);
+    }
+
+
     public int[] getCaracteristiqueSoldat(int typeSoldat) {
         switch (typeSoldat){
             case 0:
@@ -33,7 +50,6 @@ public class Armee {
                 return mBravo.get(0).getCaracteristique();
             case 4:
                 return mCharlie.get(0).getCaracteristique();
-
         }
         return mChefDeGuerre.get(0).getCaracteristique();
     }
