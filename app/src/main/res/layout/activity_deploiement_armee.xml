@@ -56,6 +56,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
+            android:id="@+id/zone1"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="4dp"
@@ -77,6 +78,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone2"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -88,6 +90,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone3"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -99,6 +102,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone4"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -110,6 +114,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone5"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -133,6 +138,7 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:id="@+id/armee_CdG"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="12dp"
@@ -164,6 +170,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_SE"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -196,6 +203,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Alpha"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -228,6 +236,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Bravo"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -260,6 +269,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Charlie"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
