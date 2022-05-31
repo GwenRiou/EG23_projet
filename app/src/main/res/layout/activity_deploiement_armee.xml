@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#4C572D"
     tools:context=".controller.Reserve">
-
     <TextView
         android:id="@+id/titre1"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/setting"
         android:layout_width="50dp"
@@ -30,7 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rouage_blanc" />
-
     <TextView
         android:id="@+id/joueur1"
         android:layout_width="wrap_content"
@@ -42,7 +39,6 @@
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/deployement"
         android:layout_width="731dp"
@@ -56,6 +52,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
+            android:id="@+id/zone1"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="4dp"
@@ -65,7 +62,6 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical"
             android:padding="10dp">
-
             <ImageView
                 android:id="@+id/group1_icon"
                 android:layout_width="40dp"
@@ -77,6 +73,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone2"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -88,6 +85,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone3"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -99,6 +97,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone4"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -110,6 +109,7 @@
             android:padding="10dp"></LinearLayout>
 
         <LinearLayout
+            android:id="@+id/zone5"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginLeft="3dp"
@@ -119,9 +119,7 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical"
             android:padding="10dp"></LinearLayout>
-
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/army"
         android:layout_width="660dp"
@@ -133,6 +131,7 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:id="@+id/armee_CdG"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="12dp"
@@ -140,7 +139,6 @@
             android:background="@drawable/border_reserve"
             android:orientation="vertical"
             android:padding="10dp">
-
             <TextView
                 android:id="@+id/group1_title"
                 android:layout_width="match_parent"
@@ -151,7 +149,6 @@
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/group1_logo"
                 android:layout_width="match_parent"
@@ -160,10 +157,10 @@
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
                 app:srcCompat="@drawable/logo_chefdeguerre" />
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_SE"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -171,7 +168,6 @@
             android:background="@drawable/border_reserve"
             android:orientation="vertical"
             android:padding="10dp">
-
             <TextView
                 android:id="@+id/group2_title"
                 android:layout_width="match_parent"
@@ -183,7 +179,6 @@
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/group2_logo"
                 android:layout_width="match_parent"
@@ -192,10 +187,10 @@
                 android:layout_margin="4dp"
                 android:contentDescription="le logo des soldats d'élites"
                 app:srcCompat="@drawable/logo_elite" />
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Alpha"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -203,7 +198,6 @@
             android:background="@drawable/border_reserve"
             android:orientation="vertical"
             android:padding="10dp">
-
             <TextView
                 android:id="@+id/group3_title"
                 android:layout_width="match_parent"
@@ -215,7 +209,6 @@
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/group3_logo"
                 android:layout_width="match_parent"
@@ -224,10 +217,10 @@
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du groupe Alpha"
                 app:srcCompat="@drawable/logo_alpha" />
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Bravo"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -235,7 +228,6 @@
             android:background="@drawable/border_reserve"
             android:orientation="vertical"
             android:padding="10dp">
-
             <TextView
                 android:id="@+id/group4_title"
                 android:layout_width="match_parent"
@@ -247,7 +239,6 @@
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/group4_logo"
                 android:layout_width="match_parent"
@@ -256,10 +247,10 @@
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du groupe Bravo"
                 app:srcCompat="@drawable/logo_bravo" />
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/armee_Charlie"
             android:layout_width="121dp"
             android:layout_height="94dp"
             android:layout_marginLeft="8dp"
@@ -267,7 +258,6 @@
             android:background="@drawable/border_reserve"
             android:orientation="vertical"
             android:padding="10dp">
-
             <TextView
                 android:id="@+id/group5_title"
                 android:layout_width="match_parent"
@@ -279,7 +269,6 @@
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/group5_logo"
                 android:layout_width="match_parent"
@@ -289,9 +278,7 @@
                 android:contentDescription="le logo du groupe Charlie"
                 app:srcCompat="@drawable/logo_charlie" />
         </LinearLayout>
-
     </LinearLayout>
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="64dp"
@@ -302,5 +289,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

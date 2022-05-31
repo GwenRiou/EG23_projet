@@ -24,15 +24,15 @@
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="268dp"
+        android:layout_marginBottom="8dp"
         android:text="Réserve"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/setting"
@@ -61,7 +61,7 @@
     <LinearLayout
         android:layout_width="731dp"
         android:layout_height="150dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -227,13 +227,14 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:background="@drawable/border_reserve"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:id="@+id/reserve1_layout"
@@ -262,7 +263,7 @@
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                android:src="@drawable/rouage_blanc"/>
+                android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
         <LinearLayout
@@ -292,7 +293,7 @@
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                android:src="@drawable/rouage_blanc"/>
+                android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
         <LinearLayout
@@ -322,7 +323,7 @@
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                android:src="@drawable/rouage_blanc"/>
+                android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
         <LinearLayout
@@ -352,7 +353,7 @@
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                android:src="@drawable/rouage_blanc"/>
+                android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
         <LinearLayout
@@ -382,7 +383,7 @@
                 android:layout_gravity="center|top"
                 android:layout_margin="4dp"
                 android:contentDescription="le logo du chef de Guerre"
-                android:src="@drawable/rouage_blanc"/>
+                android:src="@drawable/rouage_blanc" />
         </LinearLayout>
 
     </LinearLayout>
