@@ -43,7 +43,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deploiement_armee);
-
         mBranche=findViewById(R.id.joueur1);
         String brancheJoueur1 = getSharedPreferences(SHARED_PREF_JOUEUR_1_INFO,MODE_PRIVATE).getString(SHARED_PREF_JOUEUR_1_INFO_KEY,null);
         mBranche.setText("Joueur 1 : " + brancheJoueur1);
@@ -163,7 +162,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                     }
                     //((LinearLayout)v).setLayoutParams(layoutParams);
                     ((LinearLayout)v).addView(imageView, layoutParams);
-
                     return true;
 
                 case DragEvent.ACTION_DRAG_ENDED:
@@ -407,7 +405,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
                         addSoldat(5, 4);
                     }
                     ((LinearLayout)v).addView(imageView);
-
                     return true;
 
                 case DragEvent.ACTION_DRAG_ENDED:
@@ -422,7 +419,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
             return false;
         });
     }
-
     private void addSoldat(Integer zone, Integer groupe) {
 
     }
@@ -481,7 +477,6 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
             throw new IllegalStateException("Unknown clicked view : " + v);
         }
     }
-
     public void pageSuivante() {
         // Création d’une activité associée à l’exécution de MaGestionListe.class
         Intent intent = new Intent(DeploiementArmee.this, Reserve.class);

@@ -24,7 +24,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="@string/didacticiel_text"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
