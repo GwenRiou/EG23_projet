@@ -182,7 +182,7 @@ public class RepartitionPoints extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //----------------------------------------ICI changement de Page------------------------------------//
-                Intent intent = new Intent(RepartitionPoints.this, Reserve.class);
+                Intent intent = new Intent(RepartitionPoints.this, DeploiementArmee.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
             }

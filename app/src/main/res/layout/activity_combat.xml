@@ -68,12 +68,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/zone1_joueur1_soldat1"
+                    android:id="@+id/zone1_soldat4_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_charlie" />
 
                 <TextView
+                    android:id="@+id/zone1_soldat4_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -99,11 +100,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone1_soldat3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone1_soldat3_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -129,11 +132,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone1_soldat2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone1_soldat2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -160,12 +165,13 @@
                 android:foregroundGravity="center">
 
                 <ImageView
+                    android:id="@+id/zone1_soldat1_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
-                    android:id="@+id/combat_zone1_nb_elite"
+                    android:id="@+id/zone1_soldat1_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -192,12 +198,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone1_soldat0_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_chefdeguerre" />
 
                 <TextView
-                    android:id="@+id/combat_zone1_chefDeGuerre"
+                    android:id="@+id/zone1_soldat0_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -217,7 +224,7 @@
             android:layout_width="70dp"
             android:layout_height="46.7dp"
             android:layout_gravity="right"
-            android:layout_marginStart="80dp">
+            android:layout_marginStart="100dp">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -232,44 +239,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
+                    android:background="#0000000F"
                     android:gravity="center"
                     android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="2"
+                    android:text="1"
                     android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_elite" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
+                    android:textSize="20sp" />
             </FrameLayout>
 
         </RelativeLayout>
@@ -297,7 +275,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="3"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
@@ -327,7 +305,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="2"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
@@ -357,7 +335,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="2"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
@@ -390,11 +368,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat4_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_charlie" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat4_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -420,11 +400,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat3_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -450,11 +432,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -481,11 +465,13 @@
                 android:foregroundGravity="center">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat1_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat1_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -512,11 +498,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone2_soldat0_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_chefdeguerre" />
 
                 <TextView
+                    android:id="@+id/zone2_soldat0_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -533,107 +521,19 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="70dp"
+            android:layout_width="match_parent"
             android:layout_height="46.7dp"
-            android:layout_gravity="right"
-            android:layout_marginStart="80dp">
+            android:layout_gravity="fill_vertical"
+            android:layout_marginEnd="5dp"
+            android:gravity="bottom">
 
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_chefdeguerre" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_elite" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_alpha" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
@@ -646,42 +546,13 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="1"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_charlie" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -709,11 +580,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat4_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_charlie" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat4_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -739,11 +612,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat3_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -769,11 +644,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -800,11 +677,13 @@
                 android:foregroundGravity="center">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat1_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat1_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -831,11 +710,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone3_soldat0_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_chefdeguerre" />
 
                 <TextView
+                    android:id="@+id/zone3_soldat0_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -855,67 +736,7 @@
             android:layout_width="70dp"
             android:layout_height="46.7dp"
             android:layout_gravity="right"
-            android:layout_marginStart="80dp">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_chefdeguerre" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_elite" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
+            android:layout_marginStart="245dp">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -935,7 +756,7 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="1"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
@@ -965,42 +786,13 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="1"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_charlie" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -1028,11 +820,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat4_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_charlie" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat4_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1058,11 +852,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat3_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1088,11 +884,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1119,11 +917,13 @@
                 android:foregroundGravity="center">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat1_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat1_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1150,11 +950,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone4_soldat0_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_chefdeguerre" />
 
                 <TextView
+                    android:id="@+id/zone4_soldat0_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1171,104 +973,14 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="70dp"
+            android:layout_width="match_parent"
             android:layout_height="46.7dp"
-            android:layout_gravity="right"
-            android:layout_marginStart="80dp">
+            android:layout_marginEnd="5dp">
 
             <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_chefdeguerre" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_elite" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_alpha" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -1284,42 +996,13 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="1"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_charlie" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -1347,11 +1030,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat4_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_charlie" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat4_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1377,11 +1062,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_bravo" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat3_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1407,11 +1094,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat2_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_alpha" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat2_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1438,11 +1127,13 @@
                 android:foregroundGravity="center">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat1_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_elite" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat1_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1469,11 +1160,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/zone5_soldat0_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/logo_chefdeguerre" />
 
                 <TextView
+                    android:id="@+id/zone5_soldat0_text"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
@@ -1490,44 +1183,15 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="70dp"
+            android:layout_width="match_parent"
             android:layout_height="46.7dp"
             android:layout_gravity="right"
-            android:layout_marginStart="80dp">
+            android:layout_marginEnd="5dp">
 
             <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_chefdeguerre" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -1543,102 +1207,13 @@
                     android:shadowDx="1.5"
                     android:shadowDy="1.3"
                     android:shadowRadius="1.6"
-                    android:text="Text "
+                    android:text="3"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
             </FrameLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_alpha" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_bravo" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="70dp"
-            android:layout_height="46.7dp"
-            android:layout_gravity="right">
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/logo_charlie" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:shadowColor="#000000"
-                    android:shadowDx="1.5"
-                    android:shadowDy="1.3"
-                    android:shadowRadius="1.6"
-                    android:text="Text "
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </FrameLayout>
-
-        </RelativeLayout>
     </LinearLayout>
 
 

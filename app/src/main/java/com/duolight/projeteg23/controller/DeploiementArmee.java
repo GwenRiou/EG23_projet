@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.duolight.projeteg23.R;
 
+
 public class DeploiementArmee extends AppCompatActivity implements View.OnClickListener {
     private static final String SHARED_PREF_JOUEUR_1_INFO = "SHARED_PREF_JOUEUR_1_INFO"; // nom du fichier
     private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY"; // Key
@@ -37,6 +38,14 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
     private static final String VIEW_TAG3 = "Alpha";
     private static final String VIEW_TAG4 = "Bravo";
     private static final String VIEW_TAG5 = "Charlie";
+
+    //compte le nombre de soldat par zone
+    private static int [] compteurSoldatsZone1=new int[5];
+    private static int [] compteurSoldatsZone2=new int[5];
+    private static int [] compteurSoldatsZone3=new int[5];
+    private static int [] compteurSoldatsZone4=new int[5];
+    private static int [] compteurSoldatsZone5=new int[5];
+
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -420,7 +429,26 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
         });
     }
     private void addSoldat(Integer zone, Integer groupe) {
-
+        switch (zone){
+            case 1:
+                compteurSoldatsZone1[groupe]++;
+                break;
+            case 2:
+                compteurSoldatsZone2[groupe]++;
+                break;
+            case 3:
+                compteurSoldatsZone3[groupe]++;
+                break;
+            case 4:
+                compteurSoldatsZone4[groupe]++;
+                break;
+            case 5:
+                compteurSoldatsZone5[groupe]++;
+                break;
+            default:
+                Toast.makeText(this, "Erreur : le sodat n'a pas été ajouté au compteur", Toast.LENGTH_LONG).show();
+                break;
+        }
     }
 
     private static class MyDragShadowBuilder extends View.DragShadowBuilder {
@@ -479,7 +507,12 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
     }
     public void pageSuivante() {
         // Création d’une activité associée à l’exécution de MaGestionListe.class
-        Intent intent = new Intent(DeploiementArmee.this, Reserve.class);
+        Intent intent = new Intent(DeploiementArmee.this, Combat.class);
+        intent.putExtra("SOLDATS_ZONE1", compteurSoldatsZone1);
+        intent.putExtra("SOLDATS_ZONE2", compteurSoldatsZone2);
+        intent.putExtra("SOLDATS_ZONE3", compteurSoldatsZone3);
+        intent.putExtra("SOLDATS_ZONE4", compteurSoldatsZone4);
+        intent.putExtra("SOLDATS_ZONE5", compteurSoldatsZone5);
         // Exécution de l’activité : ouverture de la fenêtre
         startActivity(intent);
     }
