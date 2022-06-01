@@ -74,7 +74,7 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
         else {
             throw new IllegalStateException("Unknown clicked view : " + v);
         }
-        //check si joueur 2 à a choisit sa branche ;
+        //check si joueur 2 a choisi sa branche
         pageSuivante();
     }
 

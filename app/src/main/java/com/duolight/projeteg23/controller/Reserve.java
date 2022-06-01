@@ -7,6 +7,7 @@ import androidx.core.content.res.ResourcesCompat;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -459,6 +460,17 @@ public class Reserve extends AppCompatActivity {
                     break;
             }
             return false;
+        });
+
+        final ImageView mArrowRight= findViewById(R.id.arrow_right);
+        mArrowRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //------------------------------------------ICI changement de Page------------------------------------//
+                Intent intent = new Intent(Reserve.this, DeploiementArmee.class);
+                // Exécution de l’activité : ouverture de la fenêtre
+                startActivity(intent);
+            }
         });
     }
 

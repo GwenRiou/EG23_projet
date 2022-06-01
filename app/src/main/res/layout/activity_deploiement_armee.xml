@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="#4C572D"
     tools:context=".controller.Reserve">
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/arrow_right" />
+
     <TextView
         android:id="@+id/titre1"
         android:layout_width="wrap_content"
@@ -62,6 +73,7 @@
             android:background="@drawable/zone_combat"
             android:orientation="vertical"
             android:padding="10dp">
+          
             <ImageView
                 android:id="@+id/group1_icon"
                 android:layout_width="40dp"
@@ -279,14 +291,5 @@
                 app:srcCompat="@drawable/logo_charlie" />
         </LinearLayout>
     </LinearLayout>
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="64dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="==>"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+  
 </androidx.constraintlayout.widget.ConstraintLayout>

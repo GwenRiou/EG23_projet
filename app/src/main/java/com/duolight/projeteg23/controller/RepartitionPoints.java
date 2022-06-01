@@ -181,7 +181,7 @@ public class RepartitionPoints extends AppCompatActivity {
         mArrowRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //------------------------------------------ICI changement de Page------------------------------------//
+                //----------------------------------------ICI changement de Page------------------------------------//
                 Intent intent = new Intent(RepartitionPoints.this, Reserve.class);
                 // Exécution de l’activité : ouverture de la fenêtre
                 startActivity(intent);
