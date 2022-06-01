@@ -7,6 +7,16 @@
     android:background="#4C572D"
     tools:context=".controller.Reserve">
 
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/arrow_right" />
+
     <TextView
         android:id="@+id/titre1"
         android:layout_width="wrap_content"

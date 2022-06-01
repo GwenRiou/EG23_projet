@@ -74,7 +74,7 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
         else {
             throw new IllegalStateException("Unknown clicked view : " + v);
         }
-        //check si joueur 2 à a choisit sa branche ;
+        //check si joueur 2 a choisi sa branche
         pageSuivante();
     }
 
@@ -86,8 +86,7 @@ public class ChoixProgramme extends AppCompatActivity implements View.OnClickLis
     }
     public void pageSuivante(){
         // Création d’une activité associée à l’exécution de MaGestionListe.class
-        //Intent intent = new Intent(ChoixProgramme.this, RepartitionPoints.class);
-        Intent intent = new Intent(ChoixProgramme.this, DeploiementArmee.class);
+        Intent intent = new Intent(ChoixProgramme.this, RepartitionPoints.class);
         // Exécution de l’activité : ouverture de la fenêtre
         startActivity(intent);
     }
