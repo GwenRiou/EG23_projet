@@ -30,6 +30,11 @@ import com.duolight.projeteg23.R;
 public class DeploiementArmee extends AppCompatActivity implements View.OnClickListener {
     private static final String SHARED_PREF_JOUEUR_1_INFO = "SHARED_PREF_JOUEUR_1_INFO"; // nom du fichier
     private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY"; // Key
+
+
+    private static final String SHARED_PREF_NOMBRE_DE_TOUR = "SHARED_PREF_NOMBRE_DE_TOUR"; // nom du fichier
+    private static final String SHARED_PREF_NOMBRE_DE_TOUR_KEY = "SHARED_PREF_NOMBRE_DE_TOUR_KEY"; // Key
+
     private TextView mBranche;
     private ImageView next;
 
@@ -45,6 +50,7 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
     private static int [] compteurSoldatsZone3=new int[5];
     private static int [] compteurSoldatsZone4=new int[5];
     private static int [] compteurSoldatsZone5=new int[5];
+    private static int [] controleZone=new int[6];
 
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -55,6 +61,12 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
         mBranche=findViewById(R.id.joueur1);
         String brancheJoueur1 = getSharedPreferences(SHARED_PREF_JOUEUR_1_INFO,MODE_PRIVATE).getString(SHARED_PREF_JOUEUR_1_INFO_KEY,null);
         mBranche.setText("Joueur 1 : " + brancheJoueur1);
+
+        // initialisation du nombre de tour
+        getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR, MODE_PRIVATE)
+                .edit()
+                .putInt("SHARED_PREF_NOMBRE_DE_TOUR_KEY", 0)
+                .apply();
 
         next = findViewById(R.id.arrow_right);
         next.setOnClickListener(this);
@@ -513,6 +525,7 @@ public class DeploiementArmee extends AppCompatActivity implements View.OnClickL
         intent.putExtra("SOLDATS_ZONE3", compteurSoldatsZone3);
         intent.putExtra("SOLDATS_ZONE4", compteurSoldatsZone4);
         intent.putExtra("SOLDATS_ZONE5", compteurSoldatsZone5);
+        intent.putExtra("CONTROLE_ZONE", controleZone);
         // Exécution de l’activité : ouverture de la fenêtre
         startActivity(intent);
     }

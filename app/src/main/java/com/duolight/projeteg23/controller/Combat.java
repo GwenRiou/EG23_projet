@@ -1,9 +1,16 @@
 package com.duolight.projeteg23.controller;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.BlendMode;
+import android.graphics.BlendModeColorFilter;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +23,10 @@ public class Combat extends AppCompatActivity {
     private static final String SHARED_PREF_JOUEUR_1_INFO_KEY = "SHARED_PREF_JOUEUR_1_INFO_KEY"; // Key
     private static final String SHARED_PREF_JOUEUR_GAGNANT = "SHARED_PREF_JOUEUR_GAGNANT"; // nom du fichier
     private static final String SHARED_PREF_JOUEUR_GAGNANT_KEY = "SHARED_PREF_JOUEUR_GAGNANT_KEY"; // Key
+
+    private static final String SHARED_PREF_NOMBRE_DE_TOUR = "SHARED_PREF_NOMBRE_DE_TOUR"; // nom du fichier
+    private static final String SHARED_PREF_NOMBRE_DE_TOUR_KEY = "SHARED_PREF_NOMBRE_DE_TOUR_KEY"; // Key
+
     private TextView mBranche;
 
     private ImageView zone1Soldat0Image;
@@ -80,6 +91,13 @@ public class Combat extends AppCompatActivity {
     private TextView zone5Soldat3Text;
     private TextView zone5Soldat4Text;
 
+    private LinearLayout zone1;
+    private LinearLayout zone2;
+    private LinearLayout zone3;
+    private LinearLayout zone4;
+    private LinearLayout zone5;
+
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +107,13 @@ public class Combat extends AppCompatActivity {
         String brancheJoueur1 = getSharedPreferences(SHARED_PREF_JOUEUR_1_INFO,MODE_PRIVATE).getString(SHARED_PREF_JOUEUR_1_INFO_KEY,null);
         mBranche.setText("Joueur 1 : " + brancheJoueur1);
 
+        //Ajoute un tour
+        /*int tour = getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR,MODE_PRIVATE).getInt(SHARED_PREF_NOMBRE_DE_TOUR_KEY,0);
+        tour++;
+        getSharedPreferences(SHARED_PREF_NOMBRE_DE_TOUR, MODE_PRIVATE)
+                .edit()
+                .putInt("SHARED_PREF_NOMBRE_DE_TOUR_KEY", tour)
+                .apply();*/
 
         //Recuper les soldats de la page d'avant
         Intent intent = getIntent();
@@ -97,6 +122,8 @@ public class Combat extends AppCompatActivity {
         int []soldatsZone3 = intent.getIntArrayExtra("SOLDATS_ZONE3");
         int []soldatsZone4 = intent.getIntArrayExtra("SOLDATS_ZONE4");
         int []soldatsZone5 = intent.getIntArrayExtra("SOLDATS_ZONE5");
+
+        int[]controleZone = intent.getIntArrayExtra("CONTROLE_ZONE");
 
         // lier les images
         zone1Soldat4Image = findViewById(R.id.zone1_soldat4_image);
@@ -161,173 +188,318 @@ public class Combat extends AppCompatActivity {
         zone5Soldat3Text = findViewById(R.id.zone5_soldat3_text);
         zone5Soldat4Text = findViewById(R.id.zone5_soldat4_text);
 
+        //Lier les layouts des zones
+        zone1 = findViewById(R.id.combat_zone1);
+        zone2 = findViewById(R.id.combat_zone2);
+        zone3 = findViewById(R.id.combat_zone3);
+        zone4 = findViewById(R.id.combat_zone4);
+        zone5 = findViewById(R.id.combat_zone5);
 
-        Toast.makeText(this, "Nb de chef de geurre dans la zone 1 :  " + soldatsZone1[0], Toast.LENGTH_SHORT).show();
+        Drawable dZone1 = getResources().getDrawable(R.drawable.zone_combat);
+        Drawable dZone2 = getResources().getDrawable(R.drawable.zone_combat);
+        Drawable dZone3 = getResources().getDrawable(R.drawable.zone_combat);
+        Drawable dZone4 = getResources().getDrawable(R.drawable.zone_combat);
+        Drawable dZone5 = getResources().getDrawable(R.drawable.zone_combat);
+
 
         //Affichage Zone 1
-        if (soldatsZone1[0]==0) {
+        if (controleZone[1]!=2) {
+            if (soldatsZone1[0] == 0) {
+                zone1Soldat0Image.setVisibility(View.GONE);
+                zone1Soldat0Text.setVisibility(View.GONE);
+            } else {
+                zone1Soldat0Text.setText("" + soldatsZone1[0]);
+            }
+            if (soldatsZone1[1] == 0) {
+                zone1Soldat1Image.setVisibility(View.GONE);
+                zone1Soldat1Text.setVisibility(View.GONE);
+            } else {
+                zone1Soldat1Text.setText("" + soldatsZone1[1]);
+            }
+            if (soldatsZone1[2] == 0) {
+                zone1Soldat2Image.setVisibility(View.GONE);
+                zone1Soldat2Text.setVisibility(View.GONE);
+            } else {
+                zone1Soldat2Text.setText("" + soldatsZone1[2]);
+            }
+            if (soldatsZone1[3] == 0) {
+                zone1Soldat3Image.setVisibility(View.GONE);
+                zone1Soldat3Text.setVisibility(View.GONE);
+            } else {
+                zone1Soldat3Text.setText("" + soldatsZone1[3]);
+            }
+            if (soldatsZone1[4] == 0) {
+                zone1Soldat4Image.setVisibility(View.GONE);
+                zone1Soldat4Text.setVisibility(View.GONE);
+            } else {
+                zone1Soldat4Text.setText("" + soldatsZone1[4]);
+            }
+        }else{
             zone1Soldat0Image.setVisibility(View.GONE);
             zone1Soldat0Text.setVisibility(View.GONE);
-        }else{
-            zone1Soldat0Text.setText(""+soldatsZone1[0]);
-        }
-        if (soldatsZone1[1]==0) {
             zone1Soldat1Image.setVisibility(View.GONE);
             zone1Soldat1Text.setVisibility(View.GONE);
-        }else{
-            zone1Soldat1Text.setText(""+soldatsZone1[1]);
-        }
-        if (soldatsZone1[2]==0) {
             zone1Soldat2Image.setVisibility(View.GONE);
             zone1Soldat2Text.setVisibility(View.GONE);
-        }else{
-            zone1Soldat2Text.setText(""+soldatsZone1[2]);
-        }
-        if (soldatsZone1[3]==0) {
             zone1Soldat3Image.setVisibility(View.GONE);
             zone1Soldat3Text.setVisibility(View.GONE);
-        }else{
-            zone1Soldat3Text.setText(""+soldatsZone1[3]);
-        }
-        if (soldatsZone1[4]==0) {
             zone1Soldat4Image.setVisibility(View.GONE);
             zone1Soldat4Text.setVisibility(View.GONE);
-        }else{
-            zone1Soldat4Text.setText(""+soldatsZone1[4]);
+
+            dZone1.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            zone1.setBackground(dZone1);
+        }
+        if (controleZone[1]==1){
+            dZone1.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            zone1.setBackground(dZone1);
         }
         //Affichage Zone 2
-        if (soldatsZone2[0]==0) {
+
+        if (controleZone[2]!=2) {
+            if (soldatsZone2[0] == 0) {
+                zone2Soldat0Image.setVisibility(View.GONE);
+                zone2Soldat0Text.setVisibility(View.GONE);
+            } else {
+                zone2Soldat0Text.setText("" + soldatsZone2[0]);
+            }
+            if (soldatsZone2[1] == 0) {
+                zone2Soldat1Image.setVisibility(View.GONE);
+                zone2Soldat1Text.setVisibility(View.GONE);
+            } else {
+                zone2Soldat1Text.setText("" + soldatsZone2[1]);
+            }
+            if (soldatsZone2[2] == 0) {
+                zone2Soldat2Image.setVisibility(View.GONE);
+                zone2Soldat2Text.setVisibility(View.GONE);
+            } else {
+                zone2Soldat2Text.setText("" + soldatsZone2[2]);
+            }
+            if (soldatsZone2[3] == 0) {
+                zone2Soldat3Image.setVisibility(View.GONE);
+                zone2Soldat3Text.setVisibility(View.GONE);
+            } else {
+                zone2Soldat3Text.setText("" + soldatsZone2[3]);
+            }
+            if (soldatsZone2[4] == 0) {
+                zone2Soldat4Image.setVisibility(View.GONE);
+                zone2Soldat4Text.setVisibility(View.GONE);
+            } else {
+                zone2Soldat4Text.setText("" + soldatsZone2[4]);
+            }
+        }else{
             zone2Soldat0Image.setVisibility(View.GONE);
             zone2Soldat0Text.setVisibility(View.GONE);
-        }else{
-            zone2Soldat0Text.setText(""+soldatsZone2[0]);
-        }
-        if (soldatsZone2[1]==0) {
             zone2Soldat1Image.setVisibility(View.GONE);
             zone2Soldat1Text.setVisibility(View.GONE);
-        }else{
-            zone2Soldat1Text.setText(""+soldatsZone2[1]);
-        }
-        if (soldatsZone2[2]==0) {
             zone2Soldat2Image.setVisibility(View.GONE);
             zone2Soldat2Text.setVisibility(View.GONE);
-        }else{
-            zone2Soldat2Text.setText(""+soldatsZone2[2]);
-        }
-        if (soldatsZone2[3]==0) {
             zone2Soldat3Image.setVisibility(View.GONE);
             zone2Soldat3Text.setVisibility(View.GONE);
-        }else{
-            zone2Soldat3Text.setText(""+soldatsZone2[3]);
-        }
-        if (soldatsZone2[4]==0) {
             zone2Soldat4Image.setVisibility(View.GONE);
             zone2Soldat4Text.setVisibility(View.GONE);
-        }else{
-            zone2Soldat4Text.setText(""+soldatsZone2[4]);
+            dZone2.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            zone2.setBackground(dZone2);
         }
-
+        if (controleZone[2]==1){
+            dZone2.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            zone2.setBackground(dZone2);
+        }
         //Affichage Zone3
-        if (soldatsZone3[0]==0) {
+        if(controleZone[3]!=2) {
+            if (soldatsZone3[0] == 0) {
+                zone3Soldat0Image.setVisibility(View.GONE);
+                zone3Soldat0Text.setVisibility(View.GONE);
+            } else {
+                zone3Soldat0Text.setText("" + soldatsZone3[0]);
+            }
+            if (soldatsZone3[1] == 0) {
+                zone3Soldat1Image.setVisibility(View.GONE);
+                zone3Soldat1Text.setVisibility(View.GONE);
+            } else {
+                zone3Soldat1Text.setText("" + soldatsZone3[1]);
+            }
+            if (soldatsZone3[2] == 0) {
+                zone3Soldat2Image.setVisibility(View.GONE);
+                zone3Soldat2Text.setVisibility(View.GONE);
+            } else {
+                zone3Soldat2Text.setText("" + soldatsZone3[2]);
+            }
+            if (soldatsZone3[3] == 0) {
+                zone3Soldat3Image.setVisibility(View.GONE);
+                zone3Soldat3Text.setVisibility(View.GONE);
+            } else {
+                zone3Soldat3Text.setText("" + soldatsZone3[3]);
+            }
+            if (soldatsZone3[4] == 0) {
+                zone3Soldat4Image.setVisibility(View.GONE);
+                zone3Soldat4Text.setVisibility(View.GONE);
+            } else {
+                zone3Soldat4Text.setText("" + soldatsZone3[4]);
+            }
+        }else{
             zone3Soldat0Image.setVisibility(View.GONE);
             zone3Soldat0Text.setVisibility(View.GONE);
-        }else{
-            zone3Soldat0Text.setText(""+soldatsZone3[0]);
-        }
-        if (soldatsZone3[1]==0) {
             zone3Soldat1Image.setVisibility(View.GONE);
             zone3Soldat1Text.setVisibility(View.GONE);
-        }else{
-            zone3Soldat1Text.setText(""+soldatsZone3[1]);
-        }
-        if (soldatsZone3[2]==0) {
             zone3Soldat2Image.setVisibility(View.GONE);
             zone3Soldat2Text.setVisibility(View.GONE);
-        }else{
-            zone3Soldat2Text.setText(""+soldatsZone3[2]);
-        }
-        if (soldatsZone3[3]==0) {
             zone3Soldat3Image.setVisibility(View.GONE);
             zone3Soldat3Text.setVisibility(View.GONE);
-        }else{
-            zone3Soldat3Text.setText(""+soldatsZone3[3]);
-        }
-        if (soldatsZone3[4]==0) {
             zone3Soldat4Image.setVisibility(View.GONE);
             zone3Soldat4Text.setVisibility(View.GONE);
-        }else{
-            zone3Soldat4Text.setText(""+soldatsZone3[4]);
+
+            dZone3.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            zone3.setBackground(dZone1);
+        }
+        if (controleZone[3]==1){
+            dZone3.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            zone3.setBackground(dZone3);
         }
 
         //Affichage Zone4
-        if (soldatsZone4[0]==0) {
+        if(controleZone[4]!=2) {
+            if (soldatsZone4[0] == 0) {
+                zone4Soldat0Image.setVisibility(View.GONE);
+                zone4Soldat0Text.setVisibility(View.GONE);
+            } else {
+                zone4Soldat0Text.setText("" + soldatsZone4[0]);
+            }
+            if (soldatsZone4[1] == 0) {
+                zone4Soldat1Image.setVisibility(View.GONE);
+                zone4Soldat1Text.setVisibility(View.GONE);
+            } else {
+                zone4Soldat1Text.setText("" + soldatsZone4[1]);
+            }
+            if (soldatsZone4[2] == 0) {
+                zone4Soldat2Image.setVisibility(View.GONE);
+                zone4Soldat2Text.setVisibility(View.GONE);
+            } else {
+                zone4Soldat2Text.setText("" + soldatsZone4[2]);
+            }
+            if (soldatsZone4[3] == 0) {
+                zone4Soldat3Image.setVisibility(View.GONE);
+                zone4Soldat3Text.setVisibility(View.GONE);
+            } else {
+                zone4Soldat3Text.setText("" + soldatsZone4[3]);
+            }
+            if (soldatsZone4[4] == 0) {
+                zone4Soldat4Image.setVisibility(View.GONE);
+                zone4Soldat4Text.setVisibility(View.GONE);
+            } else {
+                zone4Soldat4Text.setText("" + soldatsZone4[4]);
+            }
+        }else{
             zone4Soldat0Image.setVisibility(View.GONE);
             zone4Soldat0Text.setVisibility(View.GONE);
-        }else{
-            zone4Soldat0Text.setText(""+soldatsZone4[0]);
-        }
-        if (soldatsZone4[1]==0) {
             zone4Soldat1Image.setVisibility(View.GONE);
             zone4Soldat1Text.setVisibility(View.GONE);
-        }else{
-            zone4Soldat1Text.setText(""+soldatsZone4[1]);
-        }
-        if (soldatsZone4[2]==0) {
             zone4Soldat2Image.setVisibility(View.GONE);
             zone4Soldat2Text.setVisibility(View.GONE);
-        }else{
-            zone4Soldat2Text.setText(""+soldatsZone4[2]);
-        }
-        if (soldatsZone4[3]==0) {
             zone4Soldat3Image.setVisibility(View.GONE);
             zone4Soldat3Text.setVisibility(View.GONE);
-        }else{
-            zone4Soldat3Text.setText(""+soldatsZone4[3]);
-        }
-        if (soldatsZone4[4]==0) {
             zone4Soldat4Image.setVisibility(View.GONE);
             zone4Soldat4Text.setVisibility(View.GONE);
-        }else{
-            zone4Soldat4Text.setText(""+soldatsZone4[4]);
+
+            dZone4.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            zone4.setBackground(dZone1);
+        }
+        if (controleZone[4]==1) {
+            dZone4.setColorFilter(Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            zone4.setBackground(dZone4);
         }
 
         //Affichage Zone5
-        if (soldatsZone5[0]==0) {
+        if(controleZone[5]!=2) {
+            if (soldatsZone5[0] == 0) {
+                zone5Soldat0Image.setVisibility(View.GONE);
+                zone5Soldat0Text.setVisibility(View.GONE);
+            } else {
+                zone5Soldat0Text.setText("" + soldatsZone5[0]);
+            }
+            if (soldatsZone5[1] == 0) {
+                zone5Soldat1Image.setVisibility(View.GONE);
+                zone5Soldat1Text.setVisibility(View.GONE);
+            } else {
+                zone5Soldat1Text.setText("" + soldatsZone5[1]);
+            }
+            if (soldatsZone5[2] == 0) {
+                zone5Soldat2Image.setVisibility(View.GONE);
+                zone5Soldat2Text.setVisibility(View.GONE);
+            } else {
+                zone5Soldat2Text.setText("" + soldatsZone5[2]);
+            }
+            if (soldatsZone5[3] == 0) {
+                zone5Soldat3Image.setVisibility(View.GONE);
+                zone5Soldat3Text.setVisibility(View.GONE);
+            } else {
+                zone5Soldat3Text.setText("" + soldatsZone5[3]);
+            }
+            if (soldatsZone5[4] == 0) {
+                zone5Soldat4Image.setVisibility(View.GONE);
+                zone5Soldat4Text.setVisibility(View.GONE);
+            } else {
+                zone5Soldat4Text.setText("" + soldatsZone5[4]);
+            }
+        }else{
             zone5Soldat0Image.setVisibility(View.GONE);
             zone5Soldat0Text.setVisibility(View.GONE);
-        }else{
-            zone5Soldat0Text.setText(""+soldatsZone5[0]);
-        }
-        if (soldatsZone5[1]==0) {
             zone5Soldat1Image.setVisibility(View.GONE);
             zone5Soldat1Text.setVisibility(View.GONE);
-        }else{
-            zone5Soldat1Text.setText(""+soldatsZone5[1]);
-        }
-        if (soldatsZone5[2]==0) {
             zone5Soldat2Image.setVisibility(View.GONE);
             zone5Soldat2Text.setVisibility(View.GONE);
-        }else{
-            zone5Soldat2Text.setText(""+soldatsZone5[2]);
-        }
-        if (soldatsZone5[3]==0) {
             zone5Soldat3Image.setVisibility(View.GONE);
             zone5Soldat3Text.setVisibility(View.GONE);
-        }else{
-            zone5Soldat3Text.setText(""+soldatsZone5[3]);
-        }
-        if (soldatsZone5[4]==0) {
             zone5Soldat4Image.setVisibility(View.GONE);
             zone5Soldat4Text.setVisibility(View.GONE);
-        }else{
-            zone5Soldat4Text.setText(""+soldatsZone5[4]);
+
+            dZone5.setColorFilter( Color.parseColor("#F0E93A"), PorterDuff.Mode.SRC_ATOP);
+            zone5.setBackground(dZone1);
+        }
+        if (controleZone[5]==1){
+            dZone5.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
+            zone5.setBackground(dZone5);
         }
 
 
 
-
-
-
+        //regardde si la zone est est controlé et si non ou regarde qui gagne le combat
+        int sommeSodats=0;
+        if(controleZone[1]==0){
+            sommeSodats=sommeSodats(soldatsZone1);
+            if (sommeSodats>8){
+                controleZone[1]=1;
+            }else{
+                controleZone[1]=2;
+            }
+        }else if (controleZone[2]==0){
+            sommeSodats=sommeSodats(soldatsZone1);
+            if (sommeSodats>=1){
+                controleZone[2]=1;
+            }else{
+                controleZone[2]=2;
+            }
+        }else if (controleZone[4]==0){
+            sommeSodats=sommeSodats(soldatsZone1);
+            if (sommeSodats>=1){
+                controleZone[4]=1;
+            }else{
+                controleZone[4]=2;
+            }
+        }else if (controleZone[5]==0){
+            sommeSodats=sommeSodats(soldatsZone1);
+            if (sommeSodats>3){
+                controleZone[5]=1;
+            }else{
+                controleZone[5]=2;
+            }
+        }else if (controleZone[3]==0){
+            sommeSodats=sommeSodats(soldatsZone1);
+            if (sommeSodats>=2){
+                controleZone[3]=1;
+            }else{
+                controleZone[3]=2;
+            }
+        }
         //defGagnant(1);
         final TextView titre = (TextView) findViewById(R.id.combat_titre);
         titre.setOnClickListener(new View.OnClickListener() {
@@ -341,6 +513,13 @@ public class Combat extends AppCompatActivity {
         });
     }
 
+    private int sommeSodats(int[] soldatsZone){
+        int somme=0;
+        for(int i=0;i<5;i++){
+            somme+=soldatsZone[i];
+        }
+        return somme;
+    }
     private void defGagnant(int Gagnant){
         getSharedPreferences(SHARED_PREF_JOUEUR_GAGNANT, MODE_PRIVATE)
                 .edit()
