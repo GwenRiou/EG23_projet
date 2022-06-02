@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -59,7 +60,11 @@ public class Combat extends AppCompatActivity {
     private ImageView zone5Soldat3Image;
     private ImageView zone5Soldat4Image;
 
-
+    //soldats du joueur2
+    private ImageView zone1Soldat0Joueur2Image;
+    private ImageView zone1Soldat1Joueur2Image;
+    private ImageView zone1Soldat3Joueur2Image;
+    private ImageView zone1Soldat4Joueur2Image;
 
     private TextView zone1Soldat0Text;
     private TextView zone1Soldat1Text;
@@ -90,6 +95,12 @@ public class Combat extends AppCompatActivity {
     private TextView zone5Soldat2Text;
     private TextView zone5Soldat3Text;
     private TextView zone5Soldat4Text;
+
+    //soldats du joueur2
+    private TextView zone1Soldat0Joueur2Text;
+    private TextView zone1Soldat1Joueur2Text;
+    private TextView zone1Soldat3Joueur2Text;
+    private TextView zone1Soldat4Joueur2Text;
 
     private LinearLayout zone1;
     private LinearLayout zone2;
@@ -458,6 +469,7 @@ public class Combat extends AppCompatActivity {
         if (controleZone[5]==1){
             dZone5.setColorFilter( Color.parseColor("#00D41A"), PorterDuff.Mode.SRC_ATOP);
             zone5.setBackground(dZone5);
+            //faire disparaitre les  soldats du joueur2
         }
 
 
@@ -468,49 +480,87 @@ public class Combat extends AppCompatActivity {
             sommeSodats=sommeSodats(soldatsZone1);
             if (sommeSodats>8){
                 controleZone[1]=1;
+                Toast.makeText(this, "Zone 1 controler par le Joueur 1", Toast.LENGTH_LONG).show();
             }else{
                 controleZone[1]=2;
+                Toast.makeText(this, "Zone 1 controler par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }else if (controleZone[2]==0){
-            sommeSodats=sommeSodats(soldatsZone1);
+            sommeSodats=sommeSodats(soldatsZone2);
             if (sommeSodats>=1){
                 controleZone[2]=1;
+                Toast.makeText(this, "Zone 2 controler par le Joueur 1", Toast.LENGTH_LONG).show();
             }else{
                 controleZone[2]=2;
+                Toast.makeText(this, "Zone 2 controler par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }else if (controleZone[4]==0){
-            sommeSodats=sommeSodats(soldatsZone1);
+            sommeSodats=sommeSodats(soldatsZone4);
             if (sommeSodats>=1){
                 controleZone[4]=1;
+                Toast.makeText(this, "Zone 4 controler par le Joueur 1", Toast.LENGTH_LONG).show();
             }else{
                 controleZone[4]=2;
+                Toast.makeText(this, "Zone 4 controler par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }else if (controleZone[5]==0){
-            sommeSodats=sommeSodats(soldatsZone1);
+            sommeSodats=sommeSodats(soldatsZone5);
             if (sommeSodats>3){
                 controleZone[5]=1;
+                Toast.makeText(this, "Zone 5 controler par le Joueur 1", Toast.LENGTH_LONG).show();
             }else{
                 controleZone[5]=2;
+                Toast.makeText(this, "Zone 5 controler par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }else if (controleZone[3]==0){
-            sommeSodats=sommeSodats(soldatsZone1);
+            sommeSodats=sommeSodats(soldatsZone3);
             if (sommeSodats>=2){
                 controleZone[3]=1;
+                Toast.makeText(this, "Zone 3 controler par le Joueur 1", Toast.LENGTH_LONG).show();
             }else{
                 controleZone[3]=2;
+                Toast.makeText(this, "Zone 3 controler par le Joueur 2", Toast.LENGTH_LONG).show();
             }
         }
-        //defGagnant(1);
-        final TextView titre = (TextView) findViewById(R.id.combat_titre);
-        titre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { // fonction déclenchée sur le clic du bouton
-                // Création d’une activité associée à l’exécution de MaGestionListe.class
-                Intent intent = new Intent(Combat.this, FinDePartie.class);
-                // Exécution de l’activité : ouverture de la fenêtre
-                startActivity(intent);
+
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+
+                //Apartir d'ici on page à la page suivant = REdeploiement ou fin de patie selon les cas
+
+                //Regarde la controle de la zone
+                int zoneControlerParJoueur1=0;
+                int zoneConrtolerParJoueur2=0;
+                for (int i=0;i<5;i++){
+                    if(controleZone[i]==1){
+                        zoneControlerParJoueur1++;
+                    }else if(controleZone[i]==2){
+                        zoneConrtolerParJoueur2++;
+                    }
+                }
+
+                if(zoneControlerParJoueur1==3){
+                    defGagnant(1);
+                }else if(zoneConrtolerParJoueur2==3){
+                    defGagnant(2);
+                }else{
+                    //------------------------------------------------------------------Appel le redeploiement des soldats
+                    Intent intentNextPage = new Intent(Combat.this, Combat.class);
+                    intentNextPage.putExtra("SOLDATS_ZONE1", soldatsZone1);
+                    intentNextPage.putExtra("SOLDATS_ZONE2", soldatsZone2);
+                    intentNextPage.putExtra("SOLDATS_ZONE3", soldatsZone3);
+                    intentNextPage.putExtra("SOLDATS_ZONE4", soldatsZone4);
+                    intentNextPage.putExtra("SOLDATS_ZONE5", soldatsZone5);
+                    intentNextPage.putExtra("CONTROLE_ZONE", controleZone);
+                    // Exécution de l’activité : ouverture de la fenêtre
+                    startActivity(intentNextPage);
+                }
             }
-        });
+        }, 5000);   //5 seconds
+
+
     }
 
     private int sommeSodats(int[] soldatsZone){
@@ -525,6 +575,10 @@ public class Combat extends AppCompatActivity {
                 .edit()
                 .putInt(SHARED_PREF_JOUEUR_GAGNANT_KEY, Gagnant)// ici le joueur 1 gagne
                 .apply();
+
+        Intent intentFinDePartie = new Intent(Combat.this, FinDePartie.class);
+        // Exécution de l’activité : ouverture de la fenêtre
+        startActivity(intentFinDePartie);
     }
 
 }
